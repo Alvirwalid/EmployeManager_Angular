@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, computed, signal} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'EmployeeManagerAngular';
+
+  collapse = signal(false);
+
+  sideNavWidth= computed(()=>this.collapse()?'250px':'65px')
+
 }
