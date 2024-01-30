@@ -7,6 +7,11 @@ import {CommentsComponent} from "./components/comments/comments.component";
 
 const routes: Routes = [
   {
+    path:'',
+    pathMatch:'full',
+    redirectTo:'dashboard'
+  },
+  {
     path:'dashboard',component:DashboardComponent
   },
   {
