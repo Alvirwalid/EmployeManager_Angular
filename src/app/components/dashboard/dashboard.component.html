@@ -1,1 +1,7 @@
-<p>dashboard works!</p>
+<carousel >
+  <slide *ngFor="let img of imgList">
+    <img [src]="img"
+         alt="first slide" style="display: block;height:500px ; width: 100%;border-radius: 16px">
+  </slide>
+
+</carousel>

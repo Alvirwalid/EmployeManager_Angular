@@ -10,6 +10,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ContentComponent } from './components/content/content.component';
 import { AnalyticsComponent } from './components/analytics/analytics.component';
 import { CommentsComponent } from './components/comments/comments.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import {HttpClientModule} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { CommentsComponent } from './components/comments/comments.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    CarouselModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
