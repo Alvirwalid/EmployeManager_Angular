@@ -1,0 +1,17 @@
+.input-icons .search-icon{
+  position: absolute;
+  left: 260px;
+  top: 63px;
+}
+.search-icon{
+  padding: 10px;
+  min-width: 50px;
+  height: 100%;
+}
+#add-btn:hover{
+  background-color: #1F7334;
+}
+
+.item-right{
+
+}
