@@ -4,12 +4,13 @@ import {DashboardComponent} from "./components/dashboard/dashboard.component";
 import {ContentComponent} from "./components/content/content.component";
 import {AnalyticsComponent} from "./components/analytics/analytics.component";
 import {CommentsComponent} from "./components/comments/comments.component";
+import {MenuItemListComponent} from "./components/menu-item/menu-item-list/menu-item-list.component";
 
 const routes: Routes = [
   {
     path:'',
     pathMatch:'full',
-    redirectTo:'dashboard'
+    redirectTo:'menuitemList'
   },
   {
     path:'dashboard',component:DashboardComponent
@@ -22,6 +23,10 @@ const routes: Routes = [
   },
   {
     path:'comment',component:CommentsComponent
+  },
+
+  {
+    path:'menuitemList',component:MenuItemListComponent
   },
 ];
 
